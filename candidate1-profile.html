@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate Full Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-weight: 500;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .profile-image {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border: 3px solid #007bff;
+    }
+    .profile-image:hover {
+      transform: scale(1.1);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    h2 {
+      margin-bottom: 5px;
+      font-weight: 500;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+    h3 {
+      margin-top: 0;
+      font-weight: 400;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 500;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .full-resume-btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: 500;
+      transition: background-color 0.3s, transform 0.3s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .full-resume-btn:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 10px;
+      }
+      .profile-image {
+        width: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Candidate Full Profile</h1>
+  </header>
+  <div class="container">
+    <a href="landing-page.html" class="back-link">&larr; Back to Candidate Showcase</a>
+    <div class="section">
+      <h2>Personal Information</h2>
+      <a href="candidate1-resume.html">
+        <img src="candidate1.jpg" alt="Candidate 1" class="profile-image">
+      </a>
+      <h3>Candidate 1</h3>
+      <p>Email: candidate1@example.com</p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
+    <div class="section">
+      <h2>Executive Summary</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris.</p>
+    </div>
+    <div class="section">
+      <h2>Education</h2>
+      <p>Bachelor of Science in Computer Science, XYZ University, 2015-2019
+
+
+
+        Experience
+        Software Developer at ABC Company, 2019-2021
+        
+        Web Developer at DEF Company, 2021-Present
+        
+        
+        Skills
+        HTML, CSS, JavaScript, React, Node.js, Python, Django
+        
+        
+        View Full Resume Page
+      </div>
+      <div class="section">
+        <h2>Experience</h2>
+        <p>Software Developer at ABC Company, 2019-2021</p>
+        <p>Web Developer at DEF Company, 2021-Present</p>
+      </div>
+      <div class="section">
+        <h2>Skills</h2>
+        <p>HTML, CSS, JavaScript, React, Node.js, Python, Django</p>
+      </div>
+      <a href="candidate1-resume.html" class="full-resume-btn">View Full Resume Page</a>
+    </div>
+  </body>
+  </html>

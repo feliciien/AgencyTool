@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidate Showcase</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  .candidate {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+  }
+  .candidate img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  .candidate:hover img {
+    transform: scale(1.1);
+  }
+  .candidate h3 {
+    margin: 10px 0;
+  }
+  .view-profile-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .view-profile-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    .candidate {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .linkedin-logo {
+    width: 14px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  .qualities {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .quality {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .quality-name {
+    width: 150px;
+  }
+  .quality-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .quality-percentage {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+<h1>Candidate Showcase</h1>
+<div class="container">
+  <div class="candidate">
+    <img src="candidate1.jpg" alt="Candidate 1">
+    <h3>Candidate 1</h3>
+    <div class="qualities">
+      <div class="quality">
+        <span class="quality-name">Success Oriented</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="quality">
+        <span class="quality-name">Very Competitive</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="quality">
+        <span class="quality-name">Focused on Results</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+    <p>Overall Match: 90%</p>
+    <p><a href="https://www.linkedin.com/in/candidate1" target="_blank">LinkedIn Profile <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24     24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM3.555 20.452H7.12V9H3.556v11.452zM5.338 7.433a2.062 2.062 0 1 1 0-4.122 2.062 2.062 0 0 1 0 4.122zm15.11 13.019h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.415v1.561h.045c.477-.9 1.638-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286h-.001z"/></svg></a></p>
+    <a href="candidate1-profile.html" class="view-profile-btn">View Full Profile</a>
+  </div>
+  <div class="candidate">
+    <img src="candidate2.jpg" alt="Candidate 2">
+    <h3>Candidate 2</h3>
+    <div class="qualities">
+      <div class="quality">
+        <span class="quality-name">Success Oriented</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="quality">
+        <span class="quality-name">Very Competitive</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="quality">
+        <span class="quality-name">Focused on Results</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+    <p>Overall Match: 85%</p>
+    <p><a href="https://www.linkedin.com/in/candidate2" target="_blank">LinkedIn Profile <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM3.555 20.452H7.12V9H3.556v11.452zM5.338 7.433a2.062 2.062 0 1 1 0-4.122 2.062 2.062 0 0 1 0 4.122zm15.11 13.019h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.415v1.561h.045c.477-.9 1.638-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286h-.001z"/></svg></a></p>
+    <a href="candidate2-profile.html" class="view-profile-btn">View Full Profile</a>
+  </div>
+  <div class="candidate">
+    <img src="candidate3.jpg" alt="Candidate 3">
+    <h3>Candidate 3</h3>
+    <div class="qualities">
+      <div class="quality">
+        <span class="quality-name">Success Oriented</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="quality">
+        <span class="quality-name">Very Competitive</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="quality">
+        <span class="quality-name">Focused on Results</span>
+        <div class="quality-bar">
+          <div class="quality-percentage" style="width: 75%;"></div>
+        </div>
+      </div>
+    </div>
+    <p>Overall Match: 85%</p>
+    <p><a href="https://www.linkedin.com/in/candidate2" target="_blank">LinkedIn Profile <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM3.555 20.452H7.12V9H3.556v11.452zM5.338 7.433a2.062 2.062 0 1 1 0-4.122 2.062 2.062 0 0 1 0 4.122zm15.11 13.019h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.415v1.561h.045c.477-.9 1.638-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286h-.001z"/></svg></a></p>
+    <a href="candidate2-profile.html" class="view-profile-btn">View Full Profile</a>
+  </div>
+  
+  </div>
+  <div class="quality">
+    <span class="quality-name"></span>
+    <div class="quality-bar">
+      <div class="quality-percentage" style="width: 70%;"></div>
+    </div>
+  </div>
+</div>
+<p>Overall Match: 800%</p>
+<p><a href="https://www.linkedin.com/in/candidate3" target="_blank">LinkedIn Profile <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM3.555 20.452H7.12V9H3.556v11.452zM5.338 7.433a2.062 2.062 0 1 1 0-4.122 2.062 2.062 0 0 1 0 4.122zm15.11 13.019h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.415v1.561h.045c.477-.9 1.638-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286h-.001z"/></svg></a></p>
+<a href="candidate3-profile.html" class="view-profile-btn">View Fullllll Profile</a>    </div>
+</div>
+<div class="quality">
+  <span class="quality-name">Focused on rrrrResults</span>
+  <div class="quality-bar">
+    <div class="quality-percentage" style="width: 70%;"></div>
+  </div>
+</div>
+</div>
+<p>Overall Match: 1%</p>
+           </div>
+  </div>
+  <div class="quality">
+    <span class="quality-name">Focused on Results</span>
+    <div class="quality-bar">
+      <div class="quality-percentage" style="width: 70%;"></div>
+    </div>
+  </div>
+</div>
+<p>Overall Match: 80%</p>
+<p><a href="https://www.linkedin.com/in/candidate3" target="_blank">LinkedIn Profile <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM3.555 20.452H7.12V9H3.556v11.452zM5.338 7.433a2.062 2.062 0 1 1 0-4.122 2.062 2.062 0 0 1 0 4.122zm15.11 13.019h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.415v1.561h.045c.477-.9 1.638-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286h-.001z"/></svg></a></p>
+<a href="candidate3-profile.html" class="view-profile-btn">View Full Profile</a>    </div>
+</div>
+<div class="quality">
+  <span class="quality-name">Focused on Results</span>
+  <div class="quality-bar">
+    <div class="quality-percentage" style="width: 70%;"></div>
+  </div>
+</div>
+</div>
+<p>Overall Match: 80%</p>
+<p><a href="https://www.linkedin.com/in/candidate3" target="_blank">LinkedIn Profile <svg class="linkedin-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.225 0H1.77C.79 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.77 24h20.452C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003zM3.555 20.452H7.12V9H3.556v11.452zM5.338 7.433a2.062 2.062 0 1 1 0-4.122 2.062 2.062 0 0 1 0 4.122zm15.11 13.019h-3.554v-5.569c0-1.328-.026-3.037-1.852-3.037-1.852 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.415v1.561h.045c.477-.9 1.638-1.85 3.37-1.85 3.602 0 4.268 2.37 4.268 5.455v6.286h-.001z"/></svg></a></p>
+<a href="candidate1-profile.html" class="view-profile-btn">View Full Profile</a>
